@@ -10,7 +10,7 @@ function CountDownSecion() {
         Count Every Second Until the <span>Event</span>
       </h2>
       <Grid cols={4}>
-        <SingleCountDown />
+        <SingleCountDown time='Days' value={5} circle={'violet'} color='tomato' />
         <SingleCountDown />
         <SingleCountDown />
         <SingleCountDown />

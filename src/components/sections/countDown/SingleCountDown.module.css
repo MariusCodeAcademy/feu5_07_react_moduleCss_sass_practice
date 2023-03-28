@@ -2,7 +2,7 @@
   display: inline-block;
   width: 15.7rem;
   height: 15.7rem;
-  border: 5px solid #000;
+  border: 8px solid #000;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -16,4 +16,12 @@
 .time {
   font-size: 1.9rem;
   font-weight: normal;
+}
+
+.violet {
+  border-color: blueviolet;
+}
+
+.tomato {
+  color: tomato;
 }
