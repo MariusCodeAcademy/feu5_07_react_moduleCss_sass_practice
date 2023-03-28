@@ -1,6 +1,7 @@
-import './card.css';
+import css from './card.module.css';
 
 function Card({ children }) {
-  return <div className='card'>{children}</div>;
+  return <div className={css.card}>{children}</div>;
 }
+
 export default Card;
