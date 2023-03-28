@@ -5,6 +5,10 @@
   border: 1px solid #777;
   cursor: pointer;
 }
+/* niekada nenaudoti tago be klases nes galios visur */
+button {
+  background-color: tomato !important;
+}
 
 .btnLg {
   padding: 0.7rem 2rem;
