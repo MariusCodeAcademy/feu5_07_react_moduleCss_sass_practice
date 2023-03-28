@@ -5,6 +5,13 @@ function Grid(props) {
     // color: 'tomato',
     gridTemplateColumns: `repeat(${props.cols}, 1fr)`,
   };
+  if (props.ul) {
+    return (
+      <ul style={inlineStyleObj} className={css.grid}>
+        {props.children}
+      </ul>
+    );
+  }
   return (
     <div style={inlineStyleObj} className={css.grid}>
       {props.children}
