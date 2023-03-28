@@ -1,13 +1,16 @@
 import React from 'react';
 import Button from './../../ui/button/Button';
 
-function SingleEvent() {
+function SingleEvent({ item }) {
+  // Prideti <Icon /> componenta
+  // sustilizuoti
+
   return (
     <li>
-      <p>icon</p>
-      <h3>title</h3>
-      <p>text</p>
-      <Button>Buy tickets</Button>
+      <p>{item.icon}</p>
+      <h3>{item.title}</h3>
+      <p>{item.description}</p>
+      <Button>{item.action}</Button>
     </li>
   );
 }

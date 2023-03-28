@@ -2,12 +2,12 @@ import React from 'react';
 import Grid from '../../ui/grid/Grid';
 import SingleEvent from './SingleEvent';
 
-function EventList() {
+function EventList(props) {
   return (
     <Grid ul>
-      <SingleEvent />
-      <SingleEvent />
-      <SingleEvent />
+      {props.list.map((eObj) => (
+        <SingleEvent key={eObj.title} item={eObj} />
+      ))}
     </Grid>
   );
 }

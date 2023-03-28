@@ -2,6 +2,8 @@ import React from 'react';
 import SectionTitle from '../../ui/title/SectionTitle';
 import EventList from './EventList';
 
+import css from './EventSection.module.css';
+
 const initData = [
   {
     icon: 'facebook',
@@ -28,7 +30,7 @@ const initData = [
 
 function EventSection() {
   return (
-    <section>
+    <section className={css.wrap}>
       <div className='container'>
         <SectionTitle title={'The Event'} subtitle={'SaasLand in Town'} />
         <EventList list={initData} />
