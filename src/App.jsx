@@ -5,7 +5,7 @@ import CountDownSecion from './components/sections/countDown/CountDownSecion';
 function App() {
   return (
     <div className='App'>
-      <CountDownSecion />
+      <CountDownSecion until={'2024-05-05'} />
     </div>
   );
 }
