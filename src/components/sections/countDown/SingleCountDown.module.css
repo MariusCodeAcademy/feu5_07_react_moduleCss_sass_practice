@@ -20,8 +20,18 @@
 
 .violet {
   border-color: blueviolet;
+  color: tomato;
 }
 
-.tomato {
-  color: tomato;
+.sky {
+  border-color: skyblue;
+  color: skyblue;
+}
+.blue {
+  border-color: teal;
+  color: teal;
+}
+.green {
+  border-color: green;
+  color: green;
 }
