@@ -1,0 +1,19 @@
+.circle {
+  display: inline-block;
+  width: 15.7rem;
+  height: 15.7rem;
+  border: 5px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.value {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.time {
+  font-size: 1.9rem;
+  font-weight: normal;
+}
