@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Grid from '../../ui/grid/Grid';
 import SectionTitle from '../../ui/title/SectionTitle';
+import ConferenceList from './conferenceList/ConferenceList';
 import css from './ConferenceSection.module.css';
 import FilterItem from './filterItem/FilterItem';
 
@@ -61,6 +62,7 @@ function ConferenceSection() {
             />
           ))}
         </Grid>
+        <ConferenceList />
       </div>
     </section>
   );
