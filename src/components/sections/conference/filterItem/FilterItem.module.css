@@ -1,7 +1,19 @@
 .redPill {
+  border: 2px solid tomato;
+  color: tomato;
+  padding: 1rem 5rem;
+  border-radius: 50px;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s ease-out;
+}
+.redPill:hover {
   background-color: tomato;
   color: #fff;
 }
 .title {
-  font-size: 5rem;
+  font-size: 1.7rem;
+}
+.redPill p {
+  font-size: 1.4rem;
 }

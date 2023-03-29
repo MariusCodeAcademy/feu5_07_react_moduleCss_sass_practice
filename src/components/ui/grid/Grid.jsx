@@ -1,6 +1,6 @@
 import css from './grid.module.css';
 
-function Grid({ cols, ul, children }) {
+function Grid({ cols, ul, children, className }) {
   const inlineStyleObj = {
     // color: 'tomato',
     gridTemplateColumns: `repeat(${cols}, 1fr)`,
@@ -16,7 +16,7 @@ function Grid({ cols, ul, children }) {
   //   );
   // }
   return (
-    <Element style={inlineStyleObj} className={css.grid}>
+    <Element style={inlineStyleObj} className={[css.grid, className].join(' ')}>
       {children}
     </Element>
   );

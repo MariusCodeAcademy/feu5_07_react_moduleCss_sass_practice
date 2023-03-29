@@ -8,8 +8,8 @@ import ConferenceSection from './components/sections/conference/ConferenceSectio
 function App() {
   return (
     <div className="App">
-      {/* <CountDownSecion until="2024-05-05" />
-      <EventSection /> */}
+      {false && <CountDownSecion until="2024-05-05" />}
+      {false && <EventSection />}
       <ConferenceSection />
     </div>
   );
