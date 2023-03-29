@@ -10,7 +10,7 @@ const initFilters = [
     id: 1,
     title: 'Day 1',
     date: '2020-02-02',
-    isActive: true,
+    isActive: false,
   },
   {
     id: 2,
@@ -58,12 +58,13 @@ function ConferenceSection() {
   // console.log('initFilters ===', initFilters);
 
   // kai reiksme tiesiogiai priklauso nuo state tai nekuriam jai papildomo state.
-  const activeDate = filters.find((fObj) => fObj.isActive).date;
+  const activeDate = filters.find((fObj) => fObj.isActive)?.date;
   console.log('activeDate ===', activeDate);
 
   const filteredConferences = initConferences.filter(
     (cObj) => cObj.date === activeDate,
   );
+  console.log('filteredConferences ===', filteredConferences);
 
   function handleToggleFilter(idOfToggleEl) {
     // console.log('handleToggleFilter ===', idOfToggleEl);
@@ -98,7 +99,9 @@ function ConferenceSection() {
             />
           ))}
         </Grid>
-        <ConferenceList list={filteredConferences} />
+        <ConferenceList
+          list={activeDate ? filteredConferences : initConferences}
+        />
       </div>
     </section>
   );
