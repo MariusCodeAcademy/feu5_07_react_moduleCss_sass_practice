@@ -57,6 +57,14 @@ function ConferenceSection() {
   const [filters, setFilters] = useState(initFilters);
   // console.log('initFilters ===', initFilters);
 
+  // kai reiksme tiesiogiai priklauso nuo state tai nekuriam jai papildomo state.
+  const activeDate = filters.find((fObj) => fObj.isActive).date;
+  console.log('activeDate ===', activeDate);
+
+  const filteredConferences = initConferences.filter(
+    (cObj) => cObj.date === activeDate,
+  );
+
   function handleToggleFilter(idOfToggleEl) {
     // console.log('handleToggleFilter ===', idOfToggleEl);
     // pakeisti to el ant kurio paspausta isActive i priesinga
@@ -90,7 +98,7 @@ function ConferenceSection() {
             />
           ))}
         </Grid>
-        <ConferenceList list={initConferences} />
+        <ConferenceList list={filteredConferences} />
       </div>
     </section>
   );
