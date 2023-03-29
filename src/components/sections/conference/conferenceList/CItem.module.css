@@ -1,0 +1,11 @@
+.flex {
+  display: flex;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.info {
+  min-width: 30%;
+}

@@ -26,6 +26,33 @@ const initFilters = [
   },
 ];
 
+const initConferences = [
+  {
+    time: '10:30 - 12:30 AM',
+    room: 'Room 2',
+    title: 'Opening Conference',
+    speaker: 'Hanson Deck',
+    img: 'https://picsum.photos/200/300',
+    date: '2020-02-02',
+  },
+  {
+    time: '10:30 - 12:30 AM',
+    room: 'Room 2',
+    title: 'Digital World Event Information',
+    speaker: 'Hanson Deck',
+    img: 'https://picsum.photos/200/300',
+    date: '2020-02-02',
+  },
+  {
+    time: '10:30 - 12:30 AM',
+    room: 'Room 2',
+    title: 'Digital Marketing Theory',
+    speaker: 'Hanson Deck',
+    img: 'https://picsum.photos/200/300',
+    date: '2020-02-05',
+  },
+];
+
 function ConferenceSection() {
   const [filters, setFilters] = useState(initFilters);
   // console.log('initFilters ===', initFilters);
@@ -45,6 +72,7 @@ function ConferenceSection() {
       }),
     );
   }
+
   return (
     <section className={css.section}>
       <div className="container">
@@ -62,7 +90,7 @@ function ConferenceSection() {
             />
           ))}
         </Grid>
-        <ConferenceList />
+        <ConferenceList list={initConferences} />
       </div>
     </section>
   );
