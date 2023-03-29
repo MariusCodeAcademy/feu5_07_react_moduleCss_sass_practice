@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './SingleCountDown.module.css';
 
-function SingleCountDown(props) {
+function SingleCountDown({ circle, value, time }) {
   // i value paragrafa paduoti reikse is props
   // value ir h3 elementams uzdeti klase pagal props
   // circle elementui uzdeti klase pagal props
@@ -24,9 +24,9 @@ function SingleCountDown(props) {
   // }
 
   return (
-    <div className={`${css.circle} ${css[props.circle]}`}>
-      <p className={css.value}>{props.value}</p>
-      <h3 className={css.time}>{props.time}</h3>
+    <div className={`${css.circle} ${css[circle]}`}>
+      <p className={css.value}>{value}</p>
+      <h3 className={css.time}>{time}</h3>
     </div>
   );
 }

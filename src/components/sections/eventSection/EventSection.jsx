@@ -31,8 +31,8 @@ const initData = [
 function EventSection() {
   return (
     <section className={css.wrap}>
-      <div className='container'>
-        <SectionTitle title={'The Event'} subtitle={'SaasLand in Town'} />
+      <div className="container">
+        <SectionTitle title="The Event" subtitle="SaasLand in Town" />
         <EventList list={initData} />
       </div>
     </section>
