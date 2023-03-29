@@ -3,16 +3,14 @@ import './styles/reset.css';
 import './styles/App.css';
 import CountDownSecion from './components/sections/countDown/CountDownSecion';
 import EventSection from './components/sections/eventSection/EventSection';
+import ConferenceSection from './components/sections/conference/ConferenceSection';
 
 function App() {
   return (
     <div className="App">
-      <h1>
-        h1
-        <i className="fa fa-free-code-camp" aria-hidden="true" />
-      </h1>
-      <CountDownSecion until="2024-05-05" />
-      <EventSection />
+      {/* <CountDownSecion until="2024-05-05" />
+      <EventSection /> */}
+      <ConferenceSection />
     </div>
   );
 }
