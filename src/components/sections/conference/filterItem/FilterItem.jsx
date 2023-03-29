@@ -3,6 +3,10 @@
 import React, { useState } from 'react';
 import css from './FilterItem.module.css';
 
+// 1. istrinti state
+// 2, mygtuko paspaudimas turi iskviesti gauta is props fn
+// 3. activeClass priklausys nuo props
+
 function FilterItem({ title, date }) {
   const [isActive, setIsActive] = useState(false);
   const activeClass = isActive ? css.active : '';
