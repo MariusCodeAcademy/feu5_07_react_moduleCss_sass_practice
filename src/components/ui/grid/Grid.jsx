@@ -1,23 +1,23 @@
 import css from './grid.module.css';
 
-function Grid(props) {
+function Grid({ cols, ul, children }) {
   const inlineStyleObj = {
     // color: 'tomato',
-    gridTemplateColumns: `repeat(${props.cols}, 1fr)`,
+    gridTemplateColumns: `repeat(${cols}, 1fr)`,
   };
 
-  const Element = props.ul ? 'ul' : 'div';
+  const Element = ul ? 'ul' : 'div';
 
-  // if (props.ul) {
+  // if (ul) {
   //   return (
   //     <ul style={inlineStyleObj} className={css.grid}>
-  //       {props.children}
+  //       {children}
   //     </ul>
   //   );
   // }
   return (
     <Element style={inlineStyleObj} className={css.grid}>
-      {props.children}
+      {children}
     </Element>
   );
 }

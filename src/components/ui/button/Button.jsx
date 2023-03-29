@@ -1,11 +1,15 @@
 import css from './Button.module.css';
 
 function Button({ children, lg = '' }) {
-  console.log('css ===', css);
+  // console.log('css ===', css);
 
   const largeClass = lg ? css.btnLg : '';
 
-  return <button className={`${css.btn} ${largeClass}`}>{children}</button>;
+  return (
+    <button type="button" className={`${css.btn} ${largeClass}`}>
+      {children}
+    </button>
+  );
 }
 
 export default Button;
