@@ -1,3 +1,8 @@
 .section {
   background-color: #e3e3e3;
 }
+
+/* neveikia pataikyti i Filter item title */
+.title {
+  color: tomato;
+}
