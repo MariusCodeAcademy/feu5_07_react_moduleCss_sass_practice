@@ -1,5 +1,5 @@
 import css from './CItem.module.css';
-
+// surasyti visas reiksmes is gautu props
 function CItem() {
   return (
     <div className={css.flex}>
@@ -8,10 +8,13 @@ function CItem() {
         <p className={css.dataRow}>
           icon <span>date</span>
         </p>
+        <p className={css.dataRow}>
+          icon <span>room</span>
+        </p>
       </div>
       <div className="about">
         <h3>title</h3>
-        <p>speaker</p>
+        <p>by speaker</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
           commodi illum ipsa, explicabo distinctio veniam.
